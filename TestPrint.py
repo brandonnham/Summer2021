@@ -13,4 +13,5 @@ for element in soup.findAll(attrs='cd__wrapper'):
     name = element.find('h3')
     if name not in results:
         results.append(name.text)
-print(results)
+df = pd.DataFrame({'Names' : results})
+df.to_csv('names.csv', index=False, encoding='utf-8')
