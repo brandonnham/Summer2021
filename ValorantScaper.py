@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 
 driver = webdriver.Chrome('C:/Users/Brand/Desktop/Software/WebDrivers/chromedriver.exe')
+
 driver.get('https://tracker.gg/valorant/profile/riot/chung%23yung/overview')
 #driver.get('https://tracker.gg/valorant/profile/riot/skunkydude13%232495/overview')
 
@@ -36,7 +37,7 @@ gamemodes.append(driver.find_element_by_xpath('//*[@id="app"]/div[2]/div[2]/div/
 driver.find_element_by_xpath('//*[@id="app"]/div[2]/div[2]/div/main/div[2]/div[3]/div[2]/a[5]').click()
 gamemodes.append(driver.find_element_by_xpath('//*[@id="app"]/div[2]/div[2]/div/main/div[2]/div[3]/div[3]/div[4]/div[1]/div/div/span[1]').text)
 
-print(gamemodes)
+#print(gamemodes)
 
 #do math
 total_time = 0;
@@ -51,7 +52,6 @@ for element in gamemodes:
         time = int(total[0])/ 60 + int(total[1])/3600
         total_time += time
         total = []
-
 
     if ('D' in element):
         #print('DAY')
@@ -75,4 +75,5 @@ for element in gamemodes:
         time = int(total[0]) + int(total[1])/60 + int(total[2])/3600
         total_time += time
 
-print(str(total_time))
+    print(str(total_time))
+
