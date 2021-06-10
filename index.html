@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valorant Hours</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+        <header id="main-header">
+            <div class="container">
+                <h1>Valorant Hours</h1>
+            </div>
+        </header>
+        <nav id="navbar">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+        <section id="showcase">
+            <div class="container">
+                <h1>By B-dawg</h1>
+            </div>
+        </section>
+        <div class="container">
+            <section id="main">
+                <h1>Welcome</h1>
+                <p>Wanna see how many hours you put into Valorant? This program will scrape data from tracker.gg/valorant to compute your total time in game.</p>
+            </section>
+            <aside id="sidebar">
+                <p>I'm definitely spending more time on this than I should be.</p>
+            </aside>
+        </div>
+        <form class="my-form" action="/data" method="POST">
+                <div class="form-group">
+                    <label for="Player">Choose Player:</label>
+                    <select name="Player" id="Players">
+                        <option value="chung">chung</option>
+                        <option value="skunkydude13">skunkydude13</option>
+                        <option value="Varbarmelligo">Varbarmelligo</option>
+                        <option value="mist">mist</option>
+                        <option value="Jummers">Jummers</option>
+                    </select>
+                    <input class="button" type="submit" value="Submit" name="">
+                </div>
+
+            </form>
+        <div id="table">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Hours</th>
+                </tr>
+                <tr>
+                    <td>Brandon</td>
+                    <td>318</td>
+                </tr>
+            </table>
+        </div>
+        <footer id="main-footer">
+            <p>Copyright &copy; 80085; Valorant Hours</p>
+        </footer>
+    </body>
+</html>
